@@ -1,13 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>brand</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container navbar">
+
+      <a href="" style="text-decoration: none;color: black;">
+        <div style="display: flex;align-items: center;gap: 10px;">
+          <img style="width: 50px; height: 50px; background-color: transparent;" src="./src/images/logo.png" alt="">
+          <h1>Mohsin</h1>
+        </div>
+      </a>
+
+      <ul class="nav-link">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+
+      <button class="downloadBtn">Download CV</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BANNER SECTION -->
+    <div class="container" style="display: flex;justify-content: space-between;align-items: center; margin-top: 100px;">
+      <div>
+        <h1 class="banner-heading">Hi, I'm Mohsin</h1>
+        <h2>Frontend Developer</h2>
+        <p style="width: 70%; padding:30px 0;">Focused on writing clean code and building smooth user experiences.
+          Always learning, always building, and
+          always improving.</p>
+        <button class="getStarted-btn">Get Started</button>
+      </div>
+      <div>
+        <img style="border-radius: 50%;" src="./src/images/me.jpeg" alt="">
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
