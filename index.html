@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Mohsin - Portfolio</title>
   <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body>
+<body class="body">
   <header>
     <nav class="container navbar">
 
       <a href="" style="text-decoration: none;color: black;">
         <div style="display: flex;align-items: center;gap: 10px;">
           <img style="width: 50px; height: 50px; background-color: transparent;" src="./src/images/logo.png" alt="">
-          <h1>Mohsin</h1>
+          <h1 class="gradient-text">Mohsin</h1>
         </div>
       </a>
 
@@ -26,16 +26,16 @@
         <li><a href="">Contact</a></li>
       </ul>
 
-      <button class="downloadBtn">Download CV</button>
+      <button class="downloadBtn">Download Resume</button>
     </nav>
   </header>
 
   <main>
 
     <!-- BANNER SECTION -->
-    <div class="container" style="display: flex;justify-content: space-between;align-items: center; margin-top: 100px;">
+    <div class="container" style="display: flex;justify-content: space-between;align-items: center; margin-top: 80px;">
       <div>
-        <h1 class="banner-heading">Hi, I'm Mohsin</h1>
+        <h1 class="banner-heading">Hi, I'm <span class="gradient-text">Mohsin</span></h1>
         <h2>Frontend Developer</h2>
         <p style="width: 70%; padding:30px 0;">Focused on writing clean code and building smooth user experiences.
           Always learning, always building, and
@@ -44,6 +44,81 @@
       </div>
       <div>
         <img style="border-radius: 50%;" src="./src/images/me.jpeg" alt="">
+      </div>
+    </div>
+
+
+
+    <!-- ABOUT SECTION -->
+    <!-- <div class="container" style=" margin-top: 100px;">
+      <h3 style="font-size: 30px; text-align: center;">About Me</h3>
+      <div class="border"></div>
+      <p style="text-align: center;width: 70%;margin-inline: auto;padding-top: 30px;"> As a dedicated frontend
+        developer, I enjoy solving problems through clean and maintainable code. My goal is to
+        build web applications that are both visually appealing and highly functional.</p>
+      <div style="display: flex;gap: 25px;justify-content: center;margin-top: 30px;">
+        <div
+          style="background: linear-gradient(to right, #C62ACC, #FF951D); width: 220px;height: 110px;border-radius: 13px;color: white;display: flex;flex-direction: column;justify-content: center;align-items: start; padding-left: 15px;">
+          <h3 style="font-size: 30px;color:white">25+</h3>
+          <p>Project Done</p>
+        </div>
+        <div
+          style="background: linear-gradient(to right, #C62ACC, #FF951D); width: 220px;height: 110px;border-radius: 13px;color: white;display: flex;flex-direction: column;justify-content: center;align-items: start; padding-left: 15px;">
+          <h3 style="font-size: 30px;color:white">2+ Years</h3>
+          <p>Experience</p>
+        </div>
+      </div>
+      <a class="github-link"><img src="./src/images/github.png" alt=""> Github</a>
+    </div> -->
+
+
+
+
+    <!-- SKILL SECTION -->
+    <div class="container" style=" margin-top: 100px;">
+      <h3 style="font-size: 30px; text-align: center;">My skills</h3>
+      <div class="border"></div>
+      <p style="text-align: center;width: 50%;margin-inline: auto;padding-top: 30px;"> Here are the technologies and
+        tools I use to build modern, responsive, and user-friendly web applications.</p>
+
+      <!-- technology card -->
+      <div style="display: grid;grid-template-columns: repeat(6,1fr);gap: 30px; margin-top: 30px;">
+        <div
+          style=" width: 100%; height: 160px;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 10px; background-color: gainsboro;border-radius: 8px;">
+          <img style="border-radius: 6px; width: 60px; height: 60px;" src="./src/images/js.png" alt="">
+          <h3 style="font-size: 20px;">Javascript</h3>
+          <p>ADVANCED</p>
+        </div>
+        <div
+          style=" width: 100%; height: 160px;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 10px; background-color: gainsboro;border-radius: 8px;">
+          <img style="border-radius: 6px; width: 60px; height: 60px;" src="./src/images/react.png" alt="">
+          <h3 style="font-size: 20px;">React</h3>
+          <p>ADVANCED</p>
+        </div>
+        <div
+          style=" width: 100%; height: 160px;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 10px; background-color: gainsboro;border-radius: 8px;">
+          <img style="border-radius: 6px; width: 60px; height: 60px;" src="./src/images/tailwind.png" alt="">
+          <h3 style="font-size: 20px;">Tailwind CSS</h3>
+          <p>ADVANCED</p>
+        </div>
+        <div
+          style=" width: 100%; height: 160px;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 10px; background-color: gainsboro;border-radius: 8px;">
+          <img style="border-radius: 6px; width: 60px; height: 60px;" src="./src/images/nodejs.png" alt="">
+          <h3 style="font-size: 20px;">Node js</h3>
+          <p>ADVANCED</p>
+        </div>
+        <div
+          style=" width: 100%; height: 160px;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 10px; background-color: gainsboro;border-radius: 8px;">
+          <img style="border-radius: 6px; width: 60px; height: 60px;" src="./src/images/firebase.png" alt="">
+          <h3 style="font-size: 20px;">Firebase</h3>
+          <p>INTERMEDIATE</p>
+        </div>
+        <div
+          style=" width: 100%; height: 160px;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 10px; background-color: gainsboro;border-radius: 8px;">
+          <img style="border-radius: 6px; width: 60px; height: 60px;" src="./src/images/css3.png" alt="">
+          <h3 style="font-size: 20px;">CSS</h3>
+          <p>ADVANCED</p>
+        </div>
       </div>
     </div>
   </main>
