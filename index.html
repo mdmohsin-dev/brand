@@ -10,101 +10,126 @@
 </head>
 
 <body>
-  <header style="background-color: #1A1414;">
+  <header class="header" style="background-color: #1A1414;">
     <nav class="container navbar">
 
-      <a href="" style="text-decoration: none;color: black;">
-        <div style="display: flex;align-items: center;gap: 10px;">
-          <img style="width: 50px; height: 50px; background-color: transparent;" src="./src/images/logo.png" alt="">
+      <a href="#home" class="logo-link">
+        <div class="logo-container">
+          <img class="logo-img" src="./src/images/logo.png" alt="">
           <h1 class="gradient-text">Mohsin</h1>
         </div>
       </a>
 
       <ul class="nav-link">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
       </ul>
 
-      <button class="downloadBtn"><i class="fa-solid fa-phone"></i> Contact</button>
+      <a href="#contact" class="downloadBtn"><i class="fa-solid fa-phone"></i> Contact</a>
+      <div class="hidden-icon">
+        <button style="background-color: transparent; border: none;color: white;" class="menu-icon" id="menuIcon"><i
+            style="font-size: 30px;" class="fa-solid fa-bars"></i></button>
+      </div>
     </nav>
+    <div class="navbar-divider"></div>
+
+
+    <div>
+      <div class="sidebar" id="sidebar">
+        <i style="font-size: 25px;" id="close-sidebar" class="fa-solid fa-x"></i>
+        <div style="margin-top: 30px;">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
   </header>
 
   <main>
 
     <!-- BANNER SECTION -->
-    <div style="background-color: #1A1414;color: white;">
-      <div class="container"
-        style="display: flex;justify-content: space-between;align-items: center; padding-top: 80px;padding-bottom: 40px;">
-        <div>
+    <div id="home" class="banner-section">
+      <div class="container banner">
+        <div class="banner-content">
           <h1 class="banner-heading">Hi, I'm <span class="gradient-text">Mohsin</span></h1>
           <h2>Frontend Developer</h2>
-          <p style="width: 70%; padding:30px 0;">Focused on writing clean code and building smooth user experiences.
+          <p class="banner-title">Focused on writing clean code and building smooth user experiences.
             Always learning, always building, and
             always improving.</p>
-          <button class="getStarted-btn"><img src="./src/images/rocket.png" alt=""> Get Started</button>
+          <a href="" class="getStarted-btn"><img src="./src/images/rocket.png" alt=""> Get Started</a>
         </div>
-        <div>
-          <img style="border-radius: 50%; border: 5px solid #5F312A;width: 376px;height: 376px;"
-            src="./src/images/me.jpeg" alt="">
+        <div class="my-img">
+          <img src="./src/images/me.jpeg" alt="">
         </div>
+
       </div>
     </div>
 
 
 
     <!-- ABOUT SECTION -->
-    <div style="background-color: #0B1019;color: white;">
-      <div class="container" style=" padding: 100px;">
+    <div id="about">
+      <div class="container about">
         <h3 class='section-heading'>About Me</h3>
         <div class="border"></div>
-        <p style="text-align: center;width: 70%;margin-inline: auto;padding-top: 30px;color: gray;"> As a dedicated frontend
+        <p class="about-section-title"> As a dedicated
+          frontend
           developer, I enjoy solving problems through clean and maintainable code. My goal is to
           build web applications that are both visually appealing and highly functional.</p>
 
 
 
-        <div style="margin-top: 40px;">
-          <h3 style="text-align: center;padding-bottom: 10px;">What I do</h3>
-          <div style="display: grid;grid-template-columns: repeat(4,1fr);gap: 30px;">
+        <div class="whatIDo-seciton">
+          <h3 class="whatI-title">What I do</h3>
+          <div class="whatIDo-cardContainer">
             <div class="card">
-              <span class="card-icon" style=" font-size: 1.8rem; margin-bottom: 14px;display: block;">🎨</span>
-              <div class="card-title" style="font-size: 0.95rem;font-weight: 700; color: #f1f5f9;margin-bottom: 8px;">
+              <span class="card-icon">🎨</span>
+              <div class="card-title">
                 UI Development</div>
-              <div class="card-desc" style="font-size: 0.82rem;color: #64748b;line-height: 1.7;">Pixel-perfect
+              <div class="card-desc">Pixel-perfect
                 interfaces that look great on every device and screen size.</div>
             </div>
             <div class="card">
-              <span class="card-icon" style=" font-size: 1.8rem; margin-bottom: 14px;display: block;">⚡</span>
-              <div class="card-title" style="font-size: 0.95rem;font-weight: 700; color: #f1f5f9;margin-bottom: 8px;">
+              <span class="card-icon">⚡</span>
+              <div class="card-title">
                 Performance</div>
-              <div class="card-desc" style="font-size: 0.82rem;color: #64748b;line-height: 1.7;">Fast-loading, optimized
+              <div class="card-desc">Fast-loading, optimized
                 web apps with smooth user experiences.</div>
             </div>
             <div class="card">
-              <span class="card-icon" style=" font-size: 1.8rem; margin-bottom: 14px;display: block;">♿</span>
-              <div class="card-title" style="font-size: 0.95rem;font-weight: 700; color: #f1f5f9;margin-bottom: 8px;">
+              <span class="card-icon">♿</span>
+              <div class="card-title">
                 Accessibility</div>
-              <div class="card-desc" style="font-size: 0.82rem;color: #64748b;line-height: 1.7;">Inclusive design that works for everyone, following WCAG standards.</div>
+              <div class="card-desc">Inclusive design that
+                works for everyone, following WCAG standards.</div>
             </div>
             <div class="card">
-              <span class="card-icon" style=" font-size: 1.8rem; margin-bottom: 14px;display: block;">🔧</span>
-              <div class="card-title" style="font-size: 0.95rem;font-weight: 700; color: #f1f5f9;margin-bottom: 8px;">
-               Clean Code</div>
-              <div class="card-desc" style="font-size: 0.82rem;color: #64748b;line-height: 1.7;">Readable, maintainable code with proper structure and documentation.</div>
+              <span class="card-icon">🔧</span>
+              <div class="card-title">
+                Clean Code</div>
+              <div class="card-desc">Readable, maintainable
+                code with proper structure and documentation.</div>
             </div>
           </div>
         </div>
 
 
-        <div style="display: flex;align-items: center;justify-content: center; gap: 20px;margin-top: 35px;">
+        <div class="linkBtn-container">
           <a class="downloadResume-btn"><i class="fa-solid fa-download"></i>Download Resume</a>
           <a href="https://github.com/mdmohsin-dev" target="_blank" style="text-decoration: none;"
-            class="github-link"><i class="fa-brands fa-github"
-              style="font-size: 25px;border-radius: 50%;color: white;"></i> Github</a>
+            class="github-link"><i class="fa-brands fa-github github-icon"></i> Github</a>
         </div>
-
 
       </div>
     </div>
@@ -112,16 +137,16 @@
 
 
     <!-- SKILL SECTION -->
-    <div style="background-color: #0B1019;color: white;">
-
-      <div class="container" style="padding: 60px 0;">
+    <div id="skills">
+      <div class="container skills-section">
         <h3 class="section-heading">My skills</h3>
         <div class="border"></div>
-        <p style="text-align: center;width: 50%;margin-inline: auto;padding-top: 30px;color: gray;"> Here are the technologies and
+        <p class="skills-title">Here are the
+          technologies and
           tools I use to build modern, responsive, and user-friendly web applications.</p>
 
         <!-- technology card -->
-        <div style="display: grid;grid-template-columns: repeat(6,1fr);gap: 30px; margin-top: 30px;">
+        <div class="technologyCard-container">
           <div class="technology-card">
             <img class="technology-img" src="./src/images/js.png" alt="">
             <h3 class="technology-name">Javascript</h3>
@@ -159,85 +184,97 @@
 
 
 
+    <!-- PROJECT SECTION -->
+    <div id="projects">
+      <div class="container" style="padding-top: 100px; padding-bottom: 40px;">
+        <h3 class="section-heading">Featured Projects</h3>
+        <div class="border"></div>
+        <p class="projectSection-title"> A selection of my
+          recent work, featuring full-stack applications and innovative solutions.</p>
+      </div>
+    </div>
+
+
+
+
     <!-- CONTACT SECTION -->
-    <div style="background-color: #0B1019;color: white;">
-      <div class="container" style="padding:100px 0;">
+    <div id="contact">
+      <div class="container getTouch-section">
         <h3 class="section-heading">Get In Touch</h3>
         <div class="border"></div>
-        <p style="text-align: center;width: 50%;margin-inline: auto;padding-top: 30px;color: gray;"> I'm always open to discussing
+        <p class="contactSection-title"> I'm always open to
+          discussing
           new projects, creative ideas or opportunities to be part of your visions.</p>
 
-        <div style="display: flex;gap: 45px;margin-top: 50px;">
+        <div class="contact-message">
 
-          <div style="width: 50%; display: flex;flex-direction: column;gap:25px;">
-            <h3 style="font-size: 24px;">Contact Information</h3>
+          <div class="contact-section">
+            <h3 class="contact-heading">Contact Information</h3>
             <!-- email card -->
-            <div
-              style="background-color: #2A1F1F;padding: 30px;display: flex;gap: 16px;height: 190px;border-radius: 15px;border: 1px solid rgba(255, 255, 255, 0.1);">
-              <i class="fa-regular fa-envelope"
-                style="color:#FF6046;font-size: 25px;background-color: #3B1F1F;padding: 25px; display:inline-flex;align-items:center;justify-content:center; width: 45px;height: 45px;border-radius: 8px;"></i>
-              <div style="display: flex;flex-direction: column;justify-content: space-between;">
+            <div class="contact-card">
+              <i class="fa-regular fa-envelope" style="color: #FF6046;
+  font-size: 25px;
+  background-color: #3B1F1F;
+  padding: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;"></i>
+              <div class="contactCard-content">
                 <h3>Email Me</h3>
                 <p>For job opportunities and collaborations.</p>
-                <a href="mailto:mdmohosin.web@gmail.com"
-                  style="color: #FF6046;text-decoration: none;font-weight: 500;">mdmohosin.web@gmail.com</a>
+                <a href="mailto:mdmohosin.web@gmail.com" class="email-link">mdmohosin.web@gmail.com</a>
               </div>
             </div>
             <!-- linkdein card -->
-            <div
-              style="background-color: #2A1F1F;padding: 30px;display: flex;gap: 16px;height: 190px;border-radius: 15px;border: 1px solid rgba(255, 255, 255, 0.1);">
+            <div class="contact-card">
               <i class="fa-brands fa-square-linkedin"
                 style="color:#3DDE80;font-size: 25px;background-color: #262A22;padding: 25px; display:inline-flex;align-items:center;justify-content:center; width: 45px;height: 45px;border-radius: 8px;"></i>
-              <div style="display: flex;flex-direction: column;justify-content: space-between;">
+              <div class="contactCard-content">
                 <h3>LinkedIn</h3>
                 <p>For job opportunities and collaborations.</p>
                 <a href="https://www.linkedin.com/in/mdmohsin-dev/" target="_blank"
-                  style="color: #3DDE80;text-decoration: none;font-weight: 500;">in/mdmohsin-dev</a>
+                  class="linkedin-link">in/mdmohsin-dev</a>
               </div>
             </div>
             <!-- location card -->
-            <div
-              style="background-color: #2A1F1F;padding: 30px;display: flex;gap: 16px;height: 190px;border-radius: 15px;border: 1px solid rgba(255, 255, 255, 0.1);">
+            <div class="contact-card">
               <i class="fa-solid fa-location-dot"
                 style="color:#B382FC;font-size: 25px;background-color: #341F34;padding: 25px; display:inline-flex;align-items:center;justify-content:center; width: 45px;height: 45px;border-radius: 8px;"></i>
-              <div style="display: flex;flex-direction: column;justify-content: space-between;">
+              <div class="contactCard-content">
                 <h3>Location</h3>
+
                 <p>Dhaka, Bangladesh</p>
                 <p>Remote Available</p>
+
               </div>
             </div>
           </div>
 
-          <div style="width: 50%;">
-            <h3 style="font-size: 24px;">Send a Message</h3>
-            <div style=" background-color: #2A1F1F; padding: 20px;margin-top: 20px;border-radius: 15px;">
+          <div class="message">
+            <h3 class="message-heading">Send a Message</h3>
+            <div class="message-section">
               <form action="">
                 <div>
-                  <div style="width: 100%;">
+                  <div class="nameInput-container">
                     <label for="Name">Name</label>
-                    <input
-                      style="margin-top: 14px; width: 100%;height: 48px; border-radius: 10px;background-color: #1A1414;border: 1px solid rgba(255, 255, 255, 0.5);padding: 5px;font-size: 16px;padding-left: 15px;"
-                      type="text" name="" id="" placeholder="Your name">
+                    <input type="text" name="" id="" placeholder="Your name">
                   </div>
 
-                  <div style="width: 100%;margin-top: 20px;">
+                  <div class="emailInput-container">
                     <label for="email">Email</label>
-                    <input
-                      style="margin-top: 14px; width: 100%;height: 48px; border-radius: 10px;background-color: #1A1414;border: 1px solid rgba(255, 255, 255, 0.5);padding: 5px;font-size: 16px;padding-left: 15px;"
-                      type="email" name="" id="" placeholder="Your email">
+                    <input type="email" name="" id="" placeholder="Your email">
                   </div>
                 </div>
-                <div style="width: 100%;margin-top: 20px;">
+                <div class="subjectInput-container">
                   <label for="text">Subject</label>
-                  <input
-                    style="margin-top: 14px; width: 100%;height: 48px; border-radius: 10px;background-color: #1A1414;border: 1px solid rgba(255, 255, 255, 0.5);padding: 5px;font-size: 16px;padding-left: 15px;"
-                    type="email" name="" id="" placeholder="Project Inquiry">
+                  <input type="email" name="" id="" placeholder="Project Inquiry">
                 </div>
-                <div style="width: 100%;margin-top: 20px;display: flex;flex-direction: column;">
+                <div class="textarea-container">
                   <label for="">Message</label>
-                  <textarea rows="6" name="" id=""
-                    style="resize: none;margin-top: 14px; width: 100%; border-radius: 10px;background-color: #1A1414;padding: 20px; font-size: 16px;;font-size: 16px;"
-                    placeholder="Tell me about yur project..."></textarea>
+                  <textarea rows="6" name="" id="" placeholder="Tell me about yur project..."></textarea>
                 </div>
                 <button class="sendMessage-btn">
                   <i class="fa-regular fa-paper-plane"></i>Send Message
@@ -253,13 +290,15 @@
   </main>
 
 
-  <footer style="background-color: #1A1414; padding: 30px 0;">
-    <nav class="container navbar" style="padding-bottom: 45px;">
+  <footer class="footer-section">
+    <nav class="container footer-navbar footer">
 
-      <a href="" style="text-decoration: none;color: black;">
-        <h1 class="gradient-text">Mohsin</h1>
-        <p style="color: gray;padding-top: 10px;">Frontend Developer • Building Modern Web Interfaces</p>
-      </a>
+      <div>
+        <a href="" class="footer-logo">
+          <h1 class="gradient-text">Mohsin</h1>
+        </a>
+        <p class="footer-title">Frontend Developer • Building Modern Web Interfaces</p>
+      </div>
 
       <ul class="nav-link">
         <li><a href="">Home</a></li>
@@ -268,23 +307,23 @@
         <li><a href="">Contact</a></li>
       </ul>
 
-      <div style="display: flex;gap: 10px;">
-        <a href="https://github.com/mdmohsin-dev" target="_blank"><i class="fa-brands fa-github"
-            style="font-size: 30px;border-radius: 50%;color: white;"></i></a>
-        <a href="https://www.linkedin.com/in/mdmohsin-dev/" target="_blank"><i class="fa-brands fa-square-linkedin"
-            style="font-size: 30px;border-radius: 50%;color: white;"></i></a>
-        <a href="mailto:mdmohosin.web@gmail.com" target="_blank"><i class="fa-solid fa-envelope"
-            style="font-size: 30px;border-radius: 50%;color: white;"></i></a>
+      <div class="footer-icon">
+        <a href="https://github.com/mdmohsin-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mdmohsin-dev/" target="_blank"><i
+            class="fa-brands fa-square-linkedin"></i></a>
+        <a href="mailto:mdmohosin.web@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </nav>
 
-    <div class="container" style="width: 100%;border: 1px solid rgba(255, 255, 255, 0.1);"></div>
+    <div class="container footer-divider"></div>
 
     <div>
-      <p class="copyright-text">&copy; 2026 Mohsin. All rights
+      <p class="copyright-text">&copy; <span id="year"></span> Mohsin. All rights
         reserved.</p>
     </div>
   </footer>
+
+  <script src="./src/script.js"></script>
 </body>
 
 </html>
