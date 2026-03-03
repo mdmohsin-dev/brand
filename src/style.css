@@ -319,7 +319,7 @@
   color: gray;
 }
 
-.about {
+.about-section {
   padding-top: 100px;
   padding-bottom: 40px;
 }
@@ -594,12 +594,16 @@
   align-content: center;
 } */
 
-.projectCard-container{
-  display: flex;justify-content: center;gap: 35px;margin-top: 55px;
+.projectCard-container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 55px;
 }
 
 .project-card {
-  /* width: 100%; */  /*for grid*/
+  /* width: 100%; */
+  /*for grid*/
   max-width: 380px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -634,6 +638,11 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 23px;
+}
+
+.projects-section {
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 
@@ -715,6 +724,16 @@
     display: block;
   }
 
+  .about-section,
+  .skills-section,
+  .projects-section {
+    padding-top: 50px;
+  }
+
+  .getTouch-section {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
 }
 
 
@@ -759,8 +778,12 @@
     gap: 30px;
   }
 
-  .projectCard-container{
+  .projectCard-container {
     flex-direction: column;
+  }
+
+  .banner-heading {
+    font-size: 50px;
   }
 }
 
