@@ -75,7 +75,8 @@
 .downloadBtn,
 .getStarted-btn,
 .github-link,
-.downloadResume-btn {
+.downloadResume-btn,
+.liveLink-btn {
   background: linear-gradient(to right, #624FFB, #DA04CF);
   color: white;
   padding: 18px 28px;
@@ -544,18 +545,90 @@
 }
 
 
-.sidebar ul{
+.sidebar ul {
   list-style-type: none;
 }
 
-.sidebar li{
-  margin-bottom: 15px;font-family: Inter;
+.sidebar li {
+  margin-bottom: 15px;
+  font-family: Inter;
 }
 
-.sidebar li a{
-  text-decoration: none;color: white;
+.sidebar li a {
+  text-decoration: none;
+  color: white;
 }
 
+.code-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: #0B1019;
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.liveLink-btn {
+  background: linear-gradient(to right, #624FFB, #DA04CF);
+  width: 70%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.liveLink-btn:hover {
+  transform: translateY(-4px);
+}
+
+.projectCard-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  margin-top: 55px;
+  align-content: center;
+}
+
+.project-card {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #2A1F1F;
+  border-radius: 15px;
+}
+
+.projectImg {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  height: 250px;
+}
+
+.projectCard-content {
+  padding: 20px;
+  padding-top: 25px;
+}
+
+.project-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.project-desc {
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.projectCard-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+}
 
 
 
@@ -580,7 +653,12 @@
   .technologyCard-container {
     grid-template-columns: repeat(3, 1fr);
   }
-   .about-section-title,.banner-title,.skills-title,.projectSection-title,.contactSection-title{
+
+  .about-section-title,
+  .banner-title,
+  .skills-title,
+  .projectSection-title,
+  .contactSection-title {
     width: 90%;
   }
 }
