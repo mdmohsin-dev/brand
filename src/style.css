@@ -586,15 +586,21 @@
   transform: translateY(-4px);
 }
 
-.projectCard-container {
+/* .projectCard-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 35px;
   margin-top: 55px;
   align-content: center;
+} */
+
+.projectCard-container{
+  display: flex;justify-content: center;gap: 35px;margin-top: 55px;
 }
 
 .project-card {
+  /* width: 100%; */  /*for grid*/
+  max-width: 380px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #2A1F1F;
@@ -751,6 +757,10 @@
   .footer-navbar {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .projectCard-container{
+    flex-direction: column;
   }
 }
 
