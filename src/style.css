@@ -550,7 +550,7 @@
 }
 
 .sidebar li {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-family: Inter;
 }
 
@@ -602,9 +602,8 @@
 }
 
 .project-card {
-  /* width: 100%; */
-  /*for grid*/
-  max-width: 380px;
+  /* width: 100%; */ /*for grid*/
+  max-width: 350px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #2A1F1F;
